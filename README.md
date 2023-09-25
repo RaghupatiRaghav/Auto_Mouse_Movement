@@ -1,11 +1,11 @@
-# Escaping Office Vigilantism
+# Auto_Mouse_Movement
 
 ## About
-Many offices use Skype for intra-office Instant Messaging (IM). While a decent tool for communication, Skype updates employees' status - 'Available', 'Off Work', 'Be Right Back', 'Busy' subject to employees' activity. The most notorious of them though, are 'Inactive' and 'Away'. If the employee does not move his/her cursor or hit a key on the keyboard, the status is updated to 'Inactive' after a default time of 5 minutes before updating to 'Away' after a default time of 10 minutes. The top it all off, Skype also shows the time elapsed since last computer activity (for instance, '_Away-20 minutes_') This incapacitates the employee from taking breaks in the absence (or presence) of work because an overzealous manager is keeping a constant watch. If you can run the Python script in this repository on your system, it automatically moves the cursor randomly within 4 minutes. Of course, you can increase or decrease this time.
+The Python script in this repository automatically moves the cursor randomly within 4 minutes. You can increase or decrease the default time for cursor movement.
 
-Code is written in Python3 and uses [pyautogui](https://pyautogui.readthedocs.io/en/latest/) to achieve cursor movement automation. It also uses the [datetime](https://docs.python.org/3/library/datetime.html), [time](https://docs.python.org/3/library/time.html) and [random](https://docs.python.org/3/library/random.html) to time the automated cursor movement. After first movement, the code stops running until the next cursor move to save computing resources. This process is repeated till the time you want the code to run.
+Code is written in Python3 and uses [pyautogui module](https://pyautogui.readthedocs.io/en/latest/) to achieve cursor movement automation. It also uses [datetime](https://docs.python.org/3/library/datetime.html), [time](https://docs.python.org/3/library/time.html) and [random](https://docs.python.org/3/library/random.html) modules to time the automated cursor movement. After first movement, the code stops running until the next cursor move to save computational resources. This process is repeated till the time you want the code to run.
 
-## How To Use:
+## Getting Started:
 
 #### Downloading Script:
 
@@ -22,9 +22,3 @@ Code is written in Python3 and uses [pyautogui](https://pyautogui.readthedocs.io
 
 ### Changing Default Cursor Movement Time:
 The automated cursor movement takes place no later than 4 minutes as default. You can change this as per your requirement. Time in minutes for cursor movement is specified in *after_minutes* variable in line 44, set it to any non negative integer value.
-
-
-
-
-
-
